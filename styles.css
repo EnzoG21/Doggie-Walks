@@ -185,3 +185,129 @@ footer p {
 .service ul li {
     margin-bottom: 10px;
 }
+
+.gallery-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.locations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.location {
+    width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location h3 {
+    margin-top: 0;
+}
+
+.location p {
+    margin: 5px 0;
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    /* Center the container */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-info img {
+    width: 100%;
+    height: auto;
+}
+
+.locations {
+    margin-top: 20px;
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+.location h3 {
+    margin-bottom: 5px;
+}
+
+.location p {
+    margin: 0;
+}

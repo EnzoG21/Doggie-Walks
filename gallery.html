@@ -60,42 +60,35 @@
         </div>
     </section>
     
-
-    
     <script>
-        // JavaScript to fetch images from the "images" folder and display them
         document.addEventListener("DOMContentLoaded", function () {
             const gallery = document.getElementById("imageGallery");
 
-            // Create an XMLHttpRequest object
-            const xhr = new XMLHttpRequest();
+            const imageFilenames = [
+                "dog-animal-pet-german-longhaired-pointer.jpg",
+                "dog-black-labrador-black-dog-162149.jpeg",
+                "dog-cavalier-king-charles-spaniel-funny-pet-162193.jpeg",
+                "dog-young-dog-puppy-59965.jpeg",
+                "pexels-photo-58997.jpeg",
+                "pexels-photo-264005.jpeg",
+                "pexels-photo-275717.jpeg",
+                "pexels-photo-283012.jpeg",
+                "pexels-photo-350428.jpeg",
+                "pexels-photo-422220.jpeg",
+                "pexels-photo-976924.jpeg",
+                "pexels-photo-1487665.jpeg",
+                "photo-1494947665470-20322015e3a8.jpg",
+                "photo-1531388185832-f111bb261e01.jpg",
+                "photo-1520103758300-2e22aee53ead.jpg",
+                "pexels-photo-165227.jpeg",
+            ];
 
-            // Define the function to handle the response
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    // Parse the response and extract image filenames
-                    const parser = new DOMParser();
-                    const htmlDocument = parser.parseFromString(xhr.responseText, "text/html");
-                    const filenames = Array.from(htmlDocument.querySelectorAll("a"))
-                        .map(link => link.getAttribute("href"))
-                        .filter(href => href.endsWith(".jpg") || href.endsWith(".png") || href.endsWith(".jpeg")); // Adjust file extensions as needed
-
-                    // Loop through the filenames and create <img> elements
-                    filenames.forEach(filename => {
-                        if (filename !== "../" && filename !== "./") {
-                            const img = document.createElement("img");
-                            img.src = "images/" + filename;
-                            gallery.appendChild(img);
-                        }
-                    });
-                } else {
-                    console.error("Failed to fetch images. Status:", xhr.status);
-                }
-            };
-
-            // Open and send the request
-            xhr.open("GET", "images/", true);
-            xhr.send();
+           
+            imageFilenames.forEach(filename => {
+                const img = document.createElement("img");
+                img.src = "images/" + filename;
+                gallery.appendChild(img);
+            });
         });
     </script>
 

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: lightblue;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -130,7 +130,7 @@ footer p {
 
 .team-section {
     padding: 20px;
-    background-color: #f9f9f9;
+    
     text-align: center;
 }
 
@@ -164,7 +164,7 @@ footer p {
 
 .services-section {
     padding: 20px;
-    background-color: #f9f9f9;
+    
     text-align: center;
 }
 
@@ -199,7 +199,7 @@ footer p {
 
 .gallery-section {
     padding: 20px;
-    background-color: #f9f9f9;
+    
     text-align: center;
 }
 

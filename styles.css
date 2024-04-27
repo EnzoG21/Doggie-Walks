@@ -32,7 +32,6 @@ nav ul li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
-    /* Added to position dropdown menu */
 }
 
 nav ul li a {
@@ -40,7 +39,6 @@ nav ul li a {
     text-decoration: none;
     display: block;
     padding: 10px 20px;
-    /* Added padding to improve clickability */
 }
 
 nav ul li:hover>ul {
@@ -54,22 +52,25 @@ nav ul ul {
     border-top: 2px solid #ee6969;
     z-index: 1000;
     left: 0;
-    /* Adjusted to align with parent */
     top: 100%;
-    /* Adjusted to position below parent */
     width: 200px;
-    /* Adjusted width of dropdown menu */
 }
 
 nav ul ul li {
     display: block;
     margin: 0;
-    /* Removed right margin to align with parent */
 }
 
 nav ul ul li a {
     padding: 10px;
-    /* Added padding to improve aesthetics */
+}
+
+.promotional-message {
+    background-color: #FDFD96;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 section {
@@ -130,13 +131,11 @@ footer p {
 
 .team-section {
     padding: 20px;
-    
-    text-align: center;
 }
 
 .team-section p {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: auto;
 }
 
 .card-container {
@@ -170,7 +169,7 @@ footer p {
 
 .services-section p {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: auto;
 }
 
 .service {
@@ -250,7 +249,6 @@ footer p {
 .form-container {
     width: 50%;
     margin: 0 auto;
-    /* Center the container */
 }
 
 form {
@@ -290,7 +288,6 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Contact Section */
 .contact-section {
     display: flex;
     justify-content: space-between;

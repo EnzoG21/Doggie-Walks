@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Doggie Walks!</title>
-    <!-- CSS only -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <section>
-        <div class="image-container">
+        <div class="top_banner">
             <img src="/images/logo.svg" alt="Logo">
             <strong>Ormskirk</strong>
             Doggie Walks<br>
@@ -50,8 +49,8 @@
             <li><a href="/contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <section class="contact-section">
-        <div class="contact-info">
+    <section class="contact_section">
+        <div class="information">
             <h2>Contact Information</h2>
             <p>We have a wide variety of daycare facilities. Listed below is all our locations and their addresses. Feel free to pop
                 in or fill out the form on the right.</p>
@@ -59,7 +58,7 @@
             <img src="/images/dog-black-labrador-black-dog-162149.jpeg" alt="Banner Image">
             
         </div>
-        <aside class="contact-form">
+        <aside class="contact_form">
             <h2>Contact Form</h2>
             
             <form action="#" method="post">
@@ -76,29 +75,35 @@
         
     </section>
     <h1>Locations</h1>
-    <div class="locations">
-        <div class="location">
+    <ul class="locations">
+        <li>
             <h3>Ormskirk</h3>
             <p>Doggie Walks</p>
-            <p>3-5 St Helens Road,</p>
-            <p>Ormskirk</p>
-            <p>L35 4PO</p>
-        </div>
-        <div class="location">
+            <address>
+                <p>3-5 St Helens Road,</p>
+                <p>Ormskirk</p>
+                <p>L35 4PO</p>
+            </address>
+        </li>
+        <li>
             <h3>Southport</h3>
             <p>Doggie Walks</p>
-            <p>150 Lord Street,</p>
-            <p>Southport,</p>
-            <p>PR9 0NP</p>
-        </div>
-        <div class="location">
+            <address>
+                <p>150 Lord Street,</p>
+                <p>Southport,</p>
+                <p>PR9 0NP</p>
+            </address>
+        </li>
+        <li>
             <h3>Warrington</h3>
             <p>Doggie Walks</p>
-            <p>47 Old Liverpool Road,</p>
-            <p>Warrington,</p>
-            <p>WA5 1AF</p>
-        </div>
-    </div>
+            <address>
+                <p>47 Old Liverpool Road,</p>
+                <p>Warrington,</p>
+                <p>WA5 1AF</p>
+            </address>
+        </li>
+    </ul>
     <footer>
         <p>Opening Times:<br>Monday – Friday (8am – 7pm)<br>Saturday (8am – 5pm)<br>Sunday (12pm - 5pm)</p>
         <p>Contact Details:<br>Phone: 01695 883 112<br>Email: info@doggiewalks.co.uk</p>

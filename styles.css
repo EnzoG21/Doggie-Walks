@@ -124,7 +124,7 @@ footer p {
 .team_text p {
     padding: 20px;
     margin: 0 auto;
-    max-width: auto;
+    max-width: none;
 }
 
 .card_grid {
@@ -152,7 +152,7 @@ footer p {
 
 .services p {
     margin: 0 auto;
-    max-width: auto;
+    max-width: none;
     padding: 20px;
     text-align: center;
 }

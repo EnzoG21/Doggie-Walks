@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('/images/paw_prints.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: lightblue;
     color: #333;
     line-height: 1.6;
@@ -76,10 +79,13 @@ nav ul ul li a {
 section {
     margin: 20px 0;
     padding: 0 20px;
+    background-color: white;
+    margin-bottom:20px;
 }
 
 section h1 {
     color: #ee6969;
+    background-color: white;
 }
 
 section ul {
@@ -105,7 +111,9 @@ footer p {
 .top_banner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 .top_banner img {
@@ -121,6 +129,9 @@ footer p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.team_text{
+    padding-bottom:20px;
+}
 .team_text p {
     padding: 20px;
     margin: 0 auto;

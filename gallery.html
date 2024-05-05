@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Document type declaration -->
 <html lang="en">
+<!-- Language of the document -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Doggie Walks!</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Head of the document -->
+    <meta charset="UTF-8"><!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsive design meta tag -->
+    <title>Gallery</title><!-- Title of the document -->
+    <link rel="stylesheet" href="styles.css"><!-- Link to external stylesheet -->
 </head>
 
 <body>
+    <!-- Location & Logo -->
     <section>
         <div class="top_banner">
             <img src="/images/logo.svg" alt="Logo">
@@ -30,11 +33,13 @@
             <img src="/images/dog-animal-pet-german-longhaired-pointer.jpg" alt="Banner Image">
         </div>
     </section>
+    <!--Header Banner-->
     <header>
         <h1>Welcome to Doggie Walks!</h1>
         <h3>"Helping our animal friends one paw at a time"</h3>
         <p>We are committed to providing professional and personal care to your beloved four-legged friends.</p>
     </header>
+    <!-- Navigation menu-->
     <nav>
         <ul>
             <li><a href="/Home.html">Home</a></li>
@@ -53,14 +58,17 @@
     <section class="gallery_text">
         <p>Every week is a busy week! Checkout how much fun our guests have within our day care centers. All photos have
             been taken with the consent of every owner.</p>
-    
+
         <div class="gallery" id="imageGallery"></div>
     </section>
-    
+
     <script>
+        // Add a DOMContentLoaded event listener to the document
         document.addEventListener("DOMContentLoaded", function () {
+            // Get the image gallery element
             const gallery = document.getElementById("imageGallery");
 
+            // Define an array of image filenames
             const imageFilenames = [
                 "dog-animal-pet-german-longhaired-pointer.jpg",
                 "dog-black-labrador-black-dog-162149.jpeg",
@@ -80,15 +88,19 @@
                 "pexels-photo-165227.jpeg",
             ];
 
-           
+            // Loop through the array of image filenames
             imageFilenames.forEach(filename => {
+                // Create a new img element
                 const img = document.createElement("img");
+                // Set the src attribute of the img element to the image filename
                 img.src = "images/" + filename;
+                // Append the img element to the gallery element
                 gallery.appendChild(img);
             });
         });
     </script>
 
+    <!-- Footer of the page-->
     <footer>
         <p>Opening Times:<br>Monday – Friday (8am – 7pm)<br>Saturday (8am – 5pm)<br>Sunday (12pm - 5pm)</p>
         <p>Contact Details:<br>Phone: 01695 883 112<br>Email: info@doggiewalks.co.uk</p>
